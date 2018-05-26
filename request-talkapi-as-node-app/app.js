@@ -45,9 +45,14 @@ var requestToTalkApi = function (req, res, next) {
 };
 
 // http://192.168.56.4:3000/ にアクセスしたときに呼ばれるroute メソッド
-app.get('/', requestToTalkApi);
+app.get('/requestToTalkApi', requestToTalkApi);
 
 // ポート番号3000番で待ち受ける
 var server = app.listen(3000, function(){
     console.log("Node.js is listening to PORT:" + server.address().port);
 });
+
+
+// publicフォルダ内の静的ファイルのHTTPアクセスを許可する
+app.use('/', express.static('public'));
+

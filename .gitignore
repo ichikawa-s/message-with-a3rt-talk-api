@@ -1,2 +1,4 @@
 /.project
 /js/a3rt-apikey.js
+.DS_Store
+request-talkapi-as-node-app/node_modules/
