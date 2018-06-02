@@ -3,7 +3,7 @@
 ## アジェンダ
 
 * [はじめに ](INTRO.md)
-* 第1部 HtmlとCSSとJavaScriptでつくる
+* [第1部 HtmlとCSSとJavaScriptでつくる](CHAPTER_1-1.md)
 * 第2部 Node.jsをWindowsで動かす
 * 第3部 Node.jsをCentOSで動かす
 

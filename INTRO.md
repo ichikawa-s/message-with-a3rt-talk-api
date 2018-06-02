@@ -2,13 +2,13 @@
 
 * A3RT(アート)
 	* A3RTは機械学習ソリューション活用の敷居を下げ、スピーディかつ低コストで施策への導入ができるよう設立されたAPI 群です
-	* https://a3rt.recruit-tech.co.jp/about/
+	* [公式サイト a3rt.recruit-tech.co.jp/about](https://a3rt.recruit-tech.co.jp/about/)
 	* Talk APIはA3RTのAPI群の中のひとつです
 
 ## Talk API
 
 * Talk APIはChatbotを作成するためのAPIです。
-* https://a3rt.recruit-tech.co.jp/product/talkAPI/
+	* [公式サイト a3rt.recruit-tech.co.jp/product/talkAPI](https://a3rt.recruit-tech.co.jp/product/talkAPI/)
 
 * エンドポイント
 	* URL：   https://api.a3rt.recruit-tech.co.jp/talk/v1/smalltalk
@@ -35,7 +35,9 @@
 	* APIのキーは別途送付します
 
 
-## 後ほど使用するソフトウェアをダウンロードしておきましょう
+## 後ほど使用するソフトウェア
+
+インストーラファイルをダウンロードしておきましょう
 
 * Node.js(Windows版)
 	* [nodejs.org/ja/download/](https://nodejs.org/ja/download/)
