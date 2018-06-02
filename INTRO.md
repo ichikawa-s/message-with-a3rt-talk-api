@@ -31,19 +31,20 @@
 ### Postman - API Development Environment
 
 * Postmanをダウンロードしてインストール
-	* https://www.getpostman.com/
+	* [Postmanのページ](https://www.getpostman.com/)
 	* APIのキーは別途送付します
 
 
-## 後ほど使用するソフトウェアをダウンロードする
+## 後ほど使用するソフトウェアをダウンロードしておきましょう
 
-* Node.js for Windows
-	* https://nodejs.org/ja/download/
+* Node.js(Windows版)
+	* [nodejs.org/ja/download/](https://nodejs.org/ja/download/)
 * VirtualBox
-	* https://www.virtualbox.org/wiki/Downloads
+	* [www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 * WinSCP
-	* https://sourceforge.net/projects/winscp/
+	* [sourceforge.net/projects/winscp/](https://sourceforge.net/projects/winscp/)
 * TeraTerm
-	* https://ja.osdn.net/projects/ttssh2/
-* CentOS 7 ISO(サイズが大きいためダウンロードしたまま放置でOKです)
-	* https://www.centos.org/download/
+	* [ja.osdn.net/projects/ttssh2/](https://ja.osdn.net/projects/ttssh2/)
+* CentOS 7 - DVD ISO
+	* [www.centos.org/download/](https://www.centos.org/download/)
+	* サイズが大きいためダウンロードしたまま放置でOKです
