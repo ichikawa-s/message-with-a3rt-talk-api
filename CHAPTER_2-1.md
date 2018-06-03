@@ -5,26 +5,36 @@
 ## ● Node.jsで動かす
 * Node.jsとは
   * ノンブロッキングI/Oとイベントループ方式で少ないメモリでも大量のアクセスを処理することができる
-  * サーバ側の処理をJavascriptで記述できるというメリットがある
+  * サーバ側の処理をJavaScriptで記述できるというメリットがあります
+
 ---
 
 ## ● Node.jsをWindowsで動かす
-* Windowsにインストールする
 
-* 作業ディレクトリを作成
-	* C:\Users\{ユーザ名}\nodework
+* WindowsにNode.jsをインストールします
+	* node-v8.11.2-x64.msi
+
+* プロジェクトのディレクトリを作成します
+	* C:\Users\\{ユーザ名}\nodework\talkapp
 
 * コマンドプロンプトを開く
 	* スタートにcmdと入力する
 
-* 作業ディレクトリに移動
-	* cd C:\Users\{ユーザ名}\nodework
+* プロジェクトのディレクトリに移動します
+
+```CMD
+$ cd C:\Users\{ユーザ名}\nodework
+```
 
 * Node.jsでプロジェクトを作成する
-	* `$ npm init`
+```CMD
+$ npm init
+```
+
+* ダイアログに回答します
 	* package name: talkapp
 	* entry point: app.js
-	* package.jsonが生成される
+* package.jsonが生成される
 
 * app.jsというファイルを作成して以下を記述する
 	* `console.log('Hello!');`

@@ -28,6 +28,12 @@
 
 ## Postmanでtalk apiにメッセージを送ってみよう
 
+* 作業ディレクトリを作成します
+	* C:\Users\\{ユーザ名}\nodework
+
+* ダウンロードしたファイルの置き場所をつくります
+	* C:\Users\\{ユーザ名}\nodework\ソフトウェア
+
 ### Postman - API Development Environment
 
 * Postmanをダウンロードしてインストール
