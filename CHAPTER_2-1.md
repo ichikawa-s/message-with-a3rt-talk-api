@@ -2,14 +2,14 @@
 
 ---
 
-## ● Node.jsで動かす
-* Node.jsとは
-  * ノンブロッキングI/Oとイベントループ方式で少ないメモリでも大量のアクセスを処理することができる
-  * サーバ側の処理をJavaScriptで記述できるというメリットがあります
+## Node.jsとは
+
+* ノンブロッキングI/Oとイベントループ方式で少ないメモリでも大量のアクセスを処理することができる
+* サーバ側の処理をJavaScriptで記述できるというメリットがあります
 
 ---
 
-## ● Node.jsをWindowsで動かす
+## Node.jsをWindowsで動かす
 
 * WindowsにNode.jsをインストールします
 	* node-v8.11.2-x64.msi
@@ -39,8 +39,13 @@ $ npm init
 * app.jsというファイルを作成して以下を記述する
 	* `console.log('Hello!');`
 
-* 起動
-	* `$ node app.js`
+* 起動します
+
+```CMD
+$ node app.js
+```
+
+---
 
 ## Expressでサーバーを起動する
 
@@ -71,6 +76,8 @@ $ node app.js
 ```
 
 * `Node.js is listening to PORT:3000` と表示されればOKです
+
+---
 
 ## Node.jsでクライアントサイドのファイルを提供する
 

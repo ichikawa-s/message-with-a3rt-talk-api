@@ -42,6 +42,7 @@ app.post('/requestToTalkApi', requestToTalkApi);
 }
 ```
 
+---
 
 ## Requestモジュールでtalk apiと通信する
 
@@ -93,3 +94,12 @@ app.post('/requestToTalkApi', requestToTalkApi);
 
 * public/js/message.jsからのajaxのURLを以下に変更します
 	* http://localhost:3000/requestToTalkApi
+
+* 起動します
+
+```CMD
+$ node app.js
+```
+
+* ブラウザで [http://localhost:3000/index.html](http://localhost:3000/index.html) にアクセスします
+
