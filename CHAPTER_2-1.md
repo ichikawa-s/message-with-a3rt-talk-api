@@ -102,4 +102,4 @@ $ node app.js
 
 ---
 
-[次のページ](CHPTER_2-2.md)
+[次のページ](CHAPTER_2-2.md)
