@@ -96,7 +96,6 @@ app.post('/requestToTalkApi', requestToTalkApi);
 	* http://localhost:3000/requestToTalkApi
 
 * 起動します
-
 ```CMD
 $ node app.js
 ```

@@ -21,7 +21,6 @@
 	* スタートにcmdと入力する
 
 * プロジェクトのディレクトリに移動します
-
 ```CMD
 $ cd C:\Users\{ユーザ名}\nodework
 ```
@@ -34,13 +33,14 @@ $ npm init
 * ダイアログに回答します
 	* package name: talkapp
 	* entry point: app.js
-* package.jsonが生成される
+	* package.jsonが生成されます
 
 * app.jsというファイルを作成して以下を記述する
-	* `console.log('Hello!');`
+```node
+console.log('Hello!');
+```
 
 * 起動します
-
 ```CMD
 $ node app.js
 ```
