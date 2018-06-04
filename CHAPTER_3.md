@@ -2,7 +2,8 @@
 
 * CentOSについて
   * CentOS（セントオーエス）は、Red Hat Enterprise Linuxとの完全互換を目指したフリーのLinuxディストリビューションです
-  * Red Hat は業務用のサーバでよく使用されますが Red Hatは有料です
+  * Red Hat は業務用のサーバでよく使用されます
+  * Red Hat は有料です
   * そのため自宅のマシンやテスト環境にサーバを構築したいときにCentOSが利用されます
 
 * VirtualBoxについて
@@ -32,17 +33,22 @@
     * rootのパスワード: sguser
     * ユーザsguserのパスワード: sguser
     * 再起動
+    * ライセンスに同意する
+    * ネットワーク: enp0n8 をオンにします
 
 ### CentOSのネットワーク設定
 
 * CentOSにsguserでログイン
   * アプリケーション -> 端末
+  * enp0n8 にIPアドレス192.168.56.xxx が割り振られていることを確認
 ```
 $ ip a
-  enp0n8 にIPアドレス192.168.56.xxx が割り振られていることを確認
 ```
 
 * IPアドレスが割り振られていない場合は以下のように手動で設定します
+  * CentOSをシャットダウン
+  * グローバルツールでDHCPを無効化
+  * CentOSを起動
   * nmtui -> 接続の編集
   * enp0n8
     * ipv4設定 -> 手作業
@@ -50,11 +56,14 @@ $ ip a
     * ipv6設定 -> 無視する
   * ip a
     * enp0n8 にIPアドレス192.168.56.101が割り振られていることを確認
+  * 参考
+    * https://qiita.com/s9910553/items/b156a341178df33466a9
 
 ### Tera TermでSSH接続
 
-* ホスト
-  * sguser@192.168.56.101
+* 接続先ホスト
+  * ip a で確認したIPアドレスにSSH接続します
+  * sguser@192.168.56.xxx
   
 ### sudo コマンドでパスワードの入力を不要にする
 
@@ -63,9 +72,11 @@ rootユーザに切り替え
 $ su -
   rootのパスワードを入力
 ```
+```
+$ visudo
+```
 
-* visudo
-  * 次のようにsguserの行を追加して保存
+* 次のようにsguserの行を追加して保存
 
 ```
 ## Same thing without a password
@@ -89,9 +100,9 @@ sguser  ALL=(ALL)       NOPASSWD: ALL
   * yumリポジトリの追加
   * sudoだと失敗するためもう一度rootに
 ```
-su -
-curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
-exit
+$ su -
+$ curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+$ exit
 ```
 
 * Node.jsのインストール
@@ -104,7 +115,7 @@ $ node -v
   * node_modules以外のファイルを以下に配置
 
 ```
-/home/sguser/nodework/talkapp
+mkdir -p /home/sguser/nodework/talkapp
 
 ├── app.js
 ├── package-lock.json
@@ -117,14 +128,19 @@ $ node -v
     └── js
         └── message.js
 ```
+
+依存関係リストをインストール
 ```
 $ npm install
 ```
+
+起動
 ```
 $ node app.js
 ```
 
-* CentOS内のFireFoxからlocalhost:3000にアクセスして表示されること
+* CentOS内のFireFoxを開く
+  * localhost:3000にアクセスして表示されること
 
 * 3000番ポートを開放する
   * firewallコマンド
