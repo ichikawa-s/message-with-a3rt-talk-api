@@ -13,8 +13,12 @@
 * VirtualBoxをインストール
   * VirtualBox-5.2.12-122591-Win.exe
 
-* グローバルツールでホストオンリーアダプターを作成
-  * 作成 ->  DHCPサーバー ->サーバーを有効化
+* グローバルツールでホストオンリーアダプターを確認
+  * アダプター: アダプターを手動で設定
+    * IPv4 アドレス: 192.168.56.1
+    * IPv4 ネットマスク: 255.255.255.0
+  * DHCPサーバー : 使用しない
+    * サーバーを有効化にチェックを入れない
 
 * CentOSのVMイメージをISOから作成する
   * VirtualBoxで新規 -> タイプ:Linux, バージョン:Red Hat(64bit)を選択
@@ -40,23 +44,37 @@
 
 * CentOSにsguserでログイン
   * アプリケーション -> 端末
-  * enp0n8 にIPアドレス192.168.56.xxx が割り振られていることを確認
+
+ネットワーク設定の確認
+
 ```
 $ ip a
 ```
 
-* IPアドレスが割り振られていない場合は以下のように手動で設定します
-  * CentOSをシャットダウン
-  * グローバルツールでDHCPを無効化
-  * CentOSを起動
-  * nmtui -> 接続の編集
+* IPアドレスが割り振られていないため下のように手動で設定します
+
+```
+$ nmtui
+```
+* 接続の編集
   * enp0n8
-    * ipv4設定 -> 手作業
-    * アドレス : 192.168.56.101/24
-    * ipv6設定 -> 無視する
-  * ip a
-    * enp0n8 にIPアドレス192.168.56.101が割り振られていることを確認
-  * 参考
+  * ipv4設定 -> 手作業
+  * アドレス : 192.168.56.101/24
+  * ipv6設定 -> 無視する
+  * 自動的に接続する
+
+* 接続をアクティベートする
+  * enp0n8
+
+ネットワーク設定の確認
+
+```
+$ ip a
+```
+
+* enp0n8 にIPアドレス192.168.56.101が割り振られていることを確認
+
+* 参考
     * https://qiita.com/s9910553/items/b156a341178df33466a9
 
 ### Tera TermでSSH接続
@@ -101,12 +119,13 @@ sguser  ALL=(ALL)       NOPASSWD: ALL
   * sudoだと失敗するためもう一度rootに
 ```
 $ su -
-$ curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+$ curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
 $ exit
 ```
 
 * Node.jsのインストール
 ```
+$ yum install -y gcc-c++ make
 $ sudo yum install -y nodejs
 $ node -v
 ```
@@ -149,3 +168,9 @@ $ node app.js
 
 * message.js のajaxの送信先URLを修正
   * url: "http://" + location.host + "/requestToTalkApi"
+  
+---
+
+ここまで終わってしまってまだ時間がある人は・・・
+
+[次のページ](CHAPTER_3-2.md)
