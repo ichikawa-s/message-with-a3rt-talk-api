@@ -1,22 +1,22 @@
-## 第3部 Node.jsをCentOSで動かす
+# 第3部 Node.jsをCentOSで動かす
 
-### CentOSについて
+## CentOSについて
 * CentOS（セントオーエス）は、Red Hat Enterprise Linuxとの完全互換を目指したフリーのLinuxディストリビューションです
   * [www.centos.org](https://www.centos.org/)
 * Red Hat は業務用のサーバでよく使用されるLinuxです
 * Red Hat は有料です
 * そのため自宅のマシンやテスト環境にサーバを構築したいときにCentOSが利用されます
 
-### VirtualBoxについて
+## VirtualBoxについて
 * 仮想マシンを管理するソフトウェアです
 * たとえば、Windowsの上で仮想マシンとしてLinuxを動かすことができます
 
 ---
 
-### VirtualBoxをインストール
+## VirtualBoxをインストール
 * VirtualBox-5.2.12-122591-Win.exe
 
-### VirtualBoxの設定
+## VirtualBoxの設定
 * グローバルツールでホストオンリーアダプターを確認
 
 * アダプター: 「アダプターを手動で設定」にチェック
@@ -28,7 +28,7 @@
 
 ---
 
-### CentOSのVMイメージをISOから作成する
+## CentOSのVMイメージをISOから作成する
 * VirtualBoxで新規 -> タイプ:Linux, バージョン:Red Hat(64bit)を選択
 * メモリ2048MB
 * 設定 -> ネットワーク
