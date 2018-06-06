@@ -30,6 +30,8 @@ $ nmtui
 * 接続をアクティベートする
   * enp0n8
 
+![nmtuiコマンドでIPアドレスを設定する](img/ip_setting_by_nmtui_cmd.png)
+
 ネットワーク設定の確認
 
 ```
