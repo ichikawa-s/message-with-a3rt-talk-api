@@ -18,7 +18,7 @@
 
 <head>
     <meta charset="UTF-8"/>
-    <title>talk apiと話そう</title>
+    <title>第1部</title>
 </head>
 
 <body>

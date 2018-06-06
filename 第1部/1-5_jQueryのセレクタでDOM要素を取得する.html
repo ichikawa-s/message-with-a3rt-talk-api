@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>第1部</title>
+</head>
+
+<body>
+    <h1>Hello. Let's talk.</h1>
+    <textarea id='hello'>こんにちは</textarea>
+
+    <h1>1-5</h1>
+    <h1>jQueryを使う</h1>
+    <h1>jQueryのセレクタでDOM要素を取得する</h1>
+
+    <!-- jQueryを読み込む -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+
+        // titleを取得する
+        var title = jQuery( 'title' ).text();
+        console.log( title );
+
+        // idを指定して値を取得する
+        var hello = jQuery( '#hello' ).val();
+        console.log( hello );
+    
+    </script>
+
+</body>
+
+</html>

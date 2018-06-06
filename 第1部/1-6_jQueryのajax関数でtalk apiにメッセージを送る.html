@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>第1部</title>
+</head>
+
+<body>
+    <h1>Hello. Let's talk.</h1>
+    <textarea id='hello'>こんにちは</textarea>
+
+    <h1>1-6</h1>
+    <h1>jQueryを使う</h1>
+    <h1>jQueryのajax関数でtalk apiにメッセージを送る</h1>
+
+    <!-- jQueryを読み込む -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+
+        var message = "おはよう";
+
+        $.ajax({
+  			  type: "POST",
+  			  url: 'https://api.a3rt.recruit-tech.co.jp/talk/v1/smalltalk',
+  			  data: { apikey: "s9DxJCNnRgmzJBprDUUZrPLXgaY3dcEU",
+        　　	      query: message },
+  			  success: function( data ) {
+  				  console.log( data.status );
+  				  console.log( data.message );
+  				  console.log( data.results );
+  			  }
+  		});
+
+    </script>
+
+</body>
+
+</html>
