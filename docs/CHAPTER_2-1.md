@@ -2,6 +2,12 @@
 
 ---
 
+第3部は準備に時間がかかるため、先に準備だけしてしまいましょう
+
+[先に準備する](CHAPTER_3-1.md)
+
+---
+
 ## Node.jsとは
 
 * ノンブロッキングI/Oとイベントループ方式で少ないメモリでも大量のアクセスを処理することができる
@@ -9,9 +15,23 @@
 
 ---
 
-第3部は準備に時間がかかるため、先に準備だけしてしまいましょう
+## Node.jsをとりまくミドルウェア
 
-[先に準備する](CHAPTER_3-1.md)
+次の4つのミドルウェアで構成されるWebアプリケーションのことをMEANスタックと呼ばれます
+
+* Mongo DB
+* Express　
+* Angular JS
+* Node.js
+
+![MEANスタック](img/mean_stack_structure.png "MEANスタック")
+
+ちなみに以前はLAMPスタックといって、以下の構成が注目されていました
+
+* Linux
+* Apache(Web サーバー)
+* MySQL
+* Perl or Python or PHP
 
 ---
 
