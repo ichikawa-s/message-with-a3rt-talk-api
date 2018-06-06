@@ -7,7 +7,7 @@
 * body-parserモジュールをインストールして依存関係リストに追加します
 
 ```CMD
-npm install body-parser --save
+$ npm install body-parser --save
 ```
 
 * app.jsに以下を追記します
