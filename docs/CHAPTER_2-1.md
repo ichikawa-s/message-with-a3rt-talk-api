@@ -41,12 +41,16 @@ Node.jsと組み合わせた次の4つのミドルウェアの構成のことを
 	* node-v8.11.2-x64.msi
 
 * プロジェクトのディレクトリを作成します
-	* C:\Users\\{ユーザ名}\nodework\talkapp
+
+```
+C:\Users\{ユーザ名}\nodework\talkapp
+```
 
 * コマンドプロンプトを開く
 	* スタートにcmdと入力する
 
 * プロジェクトのディレクトリに移動します
+
 ```CMD
 $ cd C:\Users\{ユーザ名}\nodework
 ```
@@ -76,7 +80,7 @@ $ node app.js
 ## Expressでサーバーを起動する
 
 * Expressをインストール。
-	* --saveを付けるとpackage.jsonの依存関係リストに追記されます
+	* オプション引数の \--save を付けるとpackage.jsonの依存関係リストに追記されます
 
 ```CMD
 $ npm install express --save
