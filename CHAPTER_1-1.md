@@ -7,7 +7,7 @@
 
 ---
 
-## ● HTMLの基本構成
+## HTMLの基本構成
 
 * テキストエディタでindex.htmlを作成します
 
@@ -32,7 +32,7 @@
 ---
 
 
-## ● JavaScriptの代表的な関数
+## JavaScriptの代表的な関数
 
 * setTimeout関数
   * 引数に関数を渡すイメージをつかむ
@@ -51,7 +51,7 @@
 </script>
 ```
 
-### jQueryに慣れる
+### jQueryを使ってみよう
 * jQueryの読み込み
 ```JavaScript
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
