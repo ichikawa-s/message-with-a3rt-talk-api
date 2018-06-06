@@ -31,8 +31,13 @@
 
 ---
 
+index.htmlを編集してJavaScriptを書いてみましょう
+
+* [HTML 1-1 ～ 1-6](https://github.com/ichikawa-s/talk-to-talk-api/tree/master/%E7%AC%AC1%E9%83%A8)
 
 ## JavaScriptの代表的な関数
+
+* alert関数
 
 * setTimeout関数
   * 引数に関数を渡すイメージをつかむ
