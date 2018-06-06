@@ -58,15 +58,16 @@ index.htmlを編集してJavaScriptを書いてみましょう
 
 ### jQueryを使ってみよう
 * jQueryの読み込み
+
 ```JavaScript
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 ```
 * DOM要素を操作する
 
 ```JavaScript
-  // idを指定して値を取得する
-  var hello = jQuery( '#hello' ).val();
-  console.log( hello );
+// idを指定して値を取得する
+var hello = jQuery( '#hello' ).val();
+console.log( hello );
 ```
 
 ### サーバと通信する
