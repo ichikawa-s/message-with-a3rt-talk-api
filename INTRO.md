@@ -46,15 +46,15 @@
 インストーラファイルをダウンロードしておきましょう
 
 * Node.js(Windows版)
-	* [nodejs.org/ja/download/](https://nodejs.org/ja/download/)
+	* [nodejs.org/ja/download](https://nodejs.org/ja/download/)
 * VirtualBox
 	* [www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 * WinSCP
-	* [sourceforge.net/projects/winscp/](https://sourceforge.net/projects/winscp/)
+	* [sourceforge.net/projects/winscp](https://sourceforge.net/projects/winscp/)
 * TeraTerm
-	* [ja.osdn.net/projects/ttssh2/](https://ja.osdn.net/projects/ttssh2/)
+	* [ja.osdn.net/projects/ttssh2](https://ja.osdn.net/projects/ttssh2/)
 * CentOS 7 - DVD ISO
-	* [www.centos.org/download/](https://www.centos.org/download/)
+	* [www.centos.org/download](https://www.centos.org/download/)
 	* サイズが大きいためダウンロードしたまま放置でOKです
 
 ---
