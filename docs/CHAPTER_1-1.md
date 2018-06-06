@@ -59,7 +59,7 @@ index.htmlを編集してJavaScriptを書いてみましょう
 ### jQueryを使ってみよう
 * jQueryの読み込み
 
-```JavaScript
+```HTML
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 ```
 * DOM要素を操作する
