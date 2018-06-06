@@ -2,7 +2,7 @@
 
 ---
 
-## トークアプリのベースとなるHTML
+## アプリのベースとなるHTML
 * HTML
   * index.html
 
@@ -46,7 +46,7 @@
 
 ```
 
-* CSS
+* CSSはそのまま使用しましょう
   * メッセージのCSS : ios-like-message.css
   * 入力フォームのCSS : form_botton.css
 
@@ -54,9 +54,9 @@
 
 ## JavaScriptの関数をつくる
 
-* message.jsでTODOと記載されている３つの関数の中身を記述します
+message.jsでTODOと記載されている３つの関数の中身を記述します
 
-* ユーザーの入力したメッセージを取得する
+### ユーザーの入力したメッセージを取得する
 
 ```JavaScript
 /**
@@ -69,7 +69,7 @@ function getMessage() {
 }
 ```
 
-* ユーザーのメッセージをtalk apiに送信する
+### ユーザーのメッセージをtalk apiに送信する
 
 ```JavaScript
 /**
@@ -82,7 +82,7 @@ function postMessage() {
 }
 ```
 
-* talk-apiのメッセージをタイムラインに追加する
+### talk-apiのメッセージをタイムラインに追加する
 
 ```JavaScript
 /**
