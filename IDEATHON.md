@@ -31,6 +31,10 @@
 ### テーマ候補その5 : 公開されているAPIを組み合わせてサービスをつくる
 * [IFTTT - A world that works for you](https://ifttt.com/)
 
+### テーマ候補その6 : JKの流行をねらう
+* 流行の最先端をいく女子高生にヒットすれば大学生、社会人、果てはおばちゃん、おじさんにまで連続して広がっていく模様
+* プリクラ、LINE、SNOW、TTポーズ
+* [10代女子が選ぶトレンド予測ランキング2018](https://teenslab.mynavi.jp/column/trend-predictions-2018.html)
 
 ## スマッシュヒットサービスの紹介
 
