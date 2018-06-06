@@ -22,4 +22,4 @@
 
 ---
 
-[次のページ](docs/CHAPTER_1-1.md)
+[次のページ](CHAPTER_1-1.md)

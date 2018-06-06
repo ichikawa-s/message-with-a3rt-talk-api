@@ -90,4 +90,4 @@ $.ajax({
 
 ---
 
-[次のページ](docs/CHAPTER_1-2.md)
+[次のページ](CHAPTER_1-2.md)

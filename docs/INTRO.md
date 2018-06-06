@@ -59,4 +59,4 @@
 
 ---
 
-[アイスブレイクへ](docs/ICEBREAK.md)
+[アイスブレイクへ](ICEBREAK.md)
